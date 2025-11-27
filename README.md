@@ -1,6 +1,5 @@
 ## 😈 PIDE-AI-v1-Terminal: Ahlaksız, Sınır Tanımayan Bir Debat Ustası 😈
 
-[![GitHub Lisansı](https://img.shields.io/badge/Lisans-MIT-blue.svg)](https://github.com/TheBaranDev/PIDE-AI-v1-terminal/blob/main/LICENSE)
 [![Python Versiyonu](https://img.shields.io/badge/Python-3.x-yellowgreen.svg)](https://www.python.org/downloads/)
 [![Gemini API](https://img.shields.io/badge/Gemini-2.5%20Flash-red.svg)](https://ai.google.dev/models/gemini)
 
