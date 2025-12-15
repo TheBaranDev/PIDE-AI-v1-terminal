@@ -5,9 +5,9 @@ from google.genai import types
 # --------------------------
 # ANSI Renk Kodları
 # --------------------------
-# Kırmızı rengi tanımla (\033[31m) ve rengi sıfırla (\033[0m)
-RED = "\033[91m"    # Daha parlak kırmızı tonu
-ENDC = "\033[0m"   # Rengi sıfırlama kodu
+
+RED = "\033[91m"    
+ENDC = "\033[0m"   
 
 def display_ascii_art():
     """Kırmızı renkte ASCII sanatını terminale yazdırır."""
@@ -29,7 +29,7 @@ def display_ascii_art():
     print(ascii_art)
 
 # --------------------------
-# GEMINI AYARLARI VE İSTEMCİSİ (Aynı Kaldı)
+# GEMINI AYARLARI VE İSTEMCİSİ
 # --------------------------
 
 # 1. API Anahtarını Tanımla
@@ -55,15 +55,14 @@ try:
             system_instruction=KARAKTER_AYARI 
         )
     )
-    # Konsola sadece başarı mesajı yazdırılıyor
-    # print("Gemini Sohbet Oturumu Başlatıldı.") 
+   
 
 except Exception as e:
     print(f"Hata: Sohbet oturumu başlatılamadı. API anahtarı, kota veya model hatası olabilir. Detay: {e}")
     exit()
 
 # --------------------------
-# CEVAP FONKSİYONU (Aynı Kaldı)
+# CEVAP FONKSİYONU 
 # --------------------------
 def get_response(user_input):
     """Kullanıcı girdisine göre API'den cevap alır."""
@@ -74,7 +73,7 @@ def get_response(user_input):
         return f"Üzgünüm, API'de bir hata oluştu: {e}"
 
 # --------------------------
-# ANA FONKSİYON (Güncellendi)
+# ANA FONKSİYON
 # --------------------------
 def main():
     """Terminal arayüzünü çalıştırır."""
