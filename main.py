@@ -1,10 +1,13 @@
 import os
 from google import genai
 from google.genai import types
+from dotenv import load_dotenv
 
 # --------------------------
 # ANSI Renk Kodları
 # --------------------------
+
+load_dotenv()
 
 RED = "\033[91m"    
 ENDC = "\033[0m"   
@@ -33,7 +36,7 @@ def display_ascii_art():
 # --------------------------
 
 # 1. API Anahtarını Tanımla
-GEMINI_API_KEY = "AIzaSyCYNeVMmIgg21a15WtZEwdErKVi56qyGPc" # Apiyi değiştir istersen kapatmış olabilirim
+GEMINI_API_KEY = os.getenv("API_KEY")
 
 # 2. İstemciyi (Client) oluştur
 try:
